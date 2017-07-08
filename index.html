@@ -1,1 +1,61 @@
-# bitswarming.github.io
+<html>
+<head>
+</head>
+<body>
+<script>
+document.write(
+"\n",
+"navigator_platform:" , navigator.platform,"<br>",
+"navigator_appName:",navigator.appName,"<br>",
+"navigator_appCodeName:",navigator.appCodeName,"<br>",
+"navigator_appVersion:",navigator.appVersion,"<br>",
+"navigator_userAgent:",navigator.userAgent,"<br>",
+"navigator_cookieEnabled:",navigator.cookieEnabled,"<br>",
+"navigator_language:",navigator.language,"<br>",
+"navigator_language:",navigator.languages,"<br>",
+"navigator_maxTouchPoints:",navigator.maxTouchPoints,"<br>",
+"navigator_onLine:",navigator.onLine,"<br>",
+"navigator_connection:",navigator.connection,"<br>",
+"navigator_doNotTrack:",navigator.doNotTrack,"<br>",
+navigator.geolocation,"<br>",
+navigator.hardwareConcurrency,"<br>",
+navigator.mediaDevices,"<br>",
+navigator.product,"<br>",
+navigator.productSub,"<br>",
+navigator.vendor,"<br>",
+navigator.vendorSub,"<br>")
+</script>
+<script>
+var L = navigator.plugins.length;
+document.write(
+  L.toString() + " Plugin(s)<br>"
+);
+for(var i = 0; i < L; i++) {
+  document.write(
+    "   name:" + navigator.plugins[i].name +
+    "   filename:" + navigator.plugins[i].filename +
+    "   description: " + navigator.plugins[i].description +
+    "<br>"
+  );
+
+
+
+var LL = navigator.plugins[i].length;
+document.write(
+  LL.toString() + " Mime types(s)<br>"
+);
+for(var j = 0; j < LL; j++) {
+ document.write(
+    "   type:" + navigator.plugins[i][j].type +
+    "   suffixes:" + navigator.plugins[i][j].suffixes +
+    "   description: " + navigator.plugins[i][j].description +
+    "<br>"
+  );
+}
+
+document.write("=============================<br>")
+}
+</script>
+
+</body>
+</html>
