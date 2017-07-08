@@ -1,2 +1,0 @@
-# bitswarming.github.io
-privacytest
